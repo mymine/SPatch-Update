@@ -3944,7 +3944,7 @@ public final class Launcher extends Activity
 
     private boolean skipCustomClingIfNoAccounts() {
         Cling cling = (Cling) findViewById(R.id.workspace_cling);
-        boolean customCling = cling.getDrawIdentifier().equals("workspace_custom");
+        boolean customCling = "workspace_custom".equals(cling.getDrawIdentifier());
         if (customCling) {
             AccountManager am = AccountManager.get(this);
             Account[] accounts = am.getAccountsByType("com.google");

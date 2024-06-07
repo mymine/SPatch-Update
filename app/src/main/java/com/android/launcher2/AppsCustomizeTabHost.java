@@ -305,9 +305,9 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
      * Returns the content type for the specified tab tag.
      */
     public AppsCustomizePagedView.ContentType getContentTypeForTabTag(String tag) {
-        if (tag.equals(APPS_TAB_TAG)) {
+        if (APPS_TAB_TAG.equals(tag)) {
             return AppsCustomizePagedView.ContentType.Applications;
-        } else if (tag.equals(WIDGETS_TAB_TAG)) {
+        } else if (WIDGETS_TAB_TAG.equals(tag)) {
             return AppsCustomizePagedView.ContentType.Widgets;
         }
         return AppsCustomizePagedView.ContentType.Applications;
